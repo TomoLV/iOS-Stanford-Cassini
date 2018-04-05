@@ -31,7 +31,9 @@ class ImageViewController: UIViewController {
         set {
             imageView.image = newValue
             imageView.sizeToFit()
+            // Use optional chaining to avoid crashduring segue
             scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
     }
 
@@ -44,6 +46,7 @@ class ImageViewController: UIViewController {
             scrollView.addSubview(imageView)
         }
     }
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     // MARK: - View Controller's Lifecycle
     override func viewDidLoad() {
@@ -63,6 +66,7 @@ class ImageViewController: UIViewController {
     // MARK: - Private functions
     private func fetchImage() {
         if let url = imageURL {
+            spinner.startAnimating()
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 let urlContents = try? Data(contentsOf: url)
                 DispatchQueue.main.async {

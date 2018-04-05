@@ -39,6 +39,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="TqW-tT-c5F" id="wt8-UZ-YXU"/>
+                        <outlet property="spinner" destination="JDt-an-frw" id="MLH-23-65e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6s-YK-YTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
