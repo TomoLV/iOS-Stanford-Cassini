@@ -56,9 +56,9 @@
 		2B5AD04D2076460D0085AF1E /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
+				2B5AD0652076527A0085AF1E /* Util */,
 				2B5AD062207646A00085AF1E /* Controller */,
 				2B5AD04E2076460D0085AF1E /* AppDelegate.swift */,
-				2B5AD063207651980085AF1E /* DemoURLs.swift */,
 				2B5AD0522076460D0085AF1E /* Main.storyboard */,
 				2B5AD055207646100085AF1E /* Assets.xcassets */,
 				2B5AD057207646100085AF1E /* LaunchScreen.storyboard */,
@@ -73,6 +73,14 @@
 				2B5AD0602076469B0085AF1E /* ImageViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2B5AD0652076527A0085AF1E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2B5AD063207651980085AF1E /* DemoURLs.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
