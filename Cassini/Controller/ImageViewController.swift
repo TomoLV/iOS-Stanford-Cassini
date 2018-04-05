@@ -10,6 +10,10 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var imageView: UIImageView!
+    
+    // MARK: - View Controller's Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
