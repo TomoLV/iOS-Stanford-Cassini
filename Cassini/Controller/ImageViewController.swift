@@ -13,16 +13,34 @@ class ImageViewController: UIViewController {
     // MARK: - Model
     var imageURL: URL? {
         didSet {
-            imageView.image = nil
-            // Checki if I'm on screen
+            image = nil
+            // Check if I'm on screen
             if view.window != nil {
                 fetchImage()
             }
         }
     }
+    
+    // MARK: - Instance properties
+    var imageView = UIImageView()
+    // Use computed property image for better code
+    private var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+            imageView.sizeToFit()
+            scrollView.contentSize = imageView.frame.size
+        }
+    }
 
     // MARK: - Outlets
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.addSubview(imageView)
+        }
+    }
     
     // MARK: - View Controller's Lifecycle
     override func viewDidLoad() {
@@ -44,7 +62,7 @@ class ImageViewController: UIViewController {
         if let url = imageURL {
             let urlContents = try? Data(contentsOf: url)
             if let imageData = urlContents {
-                imageView.image = UIImage(data: imageData)
+                image = UIImage(data: imageData)
             }
         }
     }
