@@ -55,7 +55,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Cassini"/>
                                         <connections>
-                                            <segue destination="rKj-4N-tlx" kind="showDetail" identifier="CASSINI" id="48f-dK-O6E"/>
+                                            <segue destination="rKj-4N-tlx" kind="showDetail" identifier="Cassini" id="48f-dK-O6E"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-d8-90E">
@@ -63,7 +63,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Earth"/>
                                         <connections>
-                                            <segue destination="rKj-4N-tlx" kind="showDetail" identifier="EARTH" id="cjo-qT-LtP"/>
+                                            <segue destination="rKj-4N-tlx" kind="showDetail" identifier="Earth" id="cjo-qT-LtP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbO-G9-iZQ">
@@ -71,7 +71,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Saturn"/>
                                         <connections>
-                                            <segue destination="rKj-4N-tlx" kind="showDetail" identifier="SATURN" id="WuD-BP-KMd"/>
+                                            <segue destination="rKj-4N-tlx" kind="showDetail" identifier="Saturn" id="WuD-BP-KMd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -123,6 +123,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WuD-BP-KMd"/>
+        <segue reference="48f-dK-O6E"/>
     </inferredMetricsTieBreakers>
 </document>
