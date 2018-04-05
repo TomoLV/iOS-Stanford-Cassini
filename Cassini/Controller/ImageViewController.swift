@@ -48,9 +48,9 @@ class ImageViewController: UIViewController {
     // MARK: - View Controller's Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        if imageURL == nil {
-            imageURL = DemoURLs.stanford
-        }
+//        if imageURL == nil {
+//            imageURL = DemoURLs.stanford
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
