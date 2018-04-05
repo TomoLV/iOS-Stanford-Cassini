@@ -21,13 +21,19 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqW-tT-c5F">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-an-frw">
+                                <rect key="frame" x="169" y="415" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TqW-tT-c5F" firstAttribute="leading" secondItem="PFp-bA-Uvv" secondAttribute="leading" id="D9o-Q2-i1O"/>
                             <constraint firstItem="TqW-tT-c5F" firstAttribute="trailing" secondItem="PFp-bA-Uvv" secondAttribute="trailing" id="FHM-3A-31j"/>
+                            <constraint firstItem="JDt-an-frw" firstAttribute="centerY" secondItem="u7J-wN-DgE" secondAttribute="centerY" id="KiV-XX-dcf"/>
                             <constraint firstAttribute="bottom" secondItem="TqW-tT-c5F" secondAttribute="bottom" id="RQf-ZX-htc"/>
                             <constraint firstItem="TqW-tT-c5F" firstAttribute="top" secondItem="PFp-bA-Uvv" secondAttribute="top" id="ucq-lw-Z8y"/>
+                            <constraint firstItem="JDt-an-frw" firstAttribute="centerX" secondItem="u7J-wN-DgE" secondAttribute="centerX" id="ulE-Jb-hWg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u7J-wN-DgE"/>
                     </view>
